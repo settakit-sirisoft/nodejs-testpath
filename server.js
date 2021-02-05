@@ -9,6 +9,10 @@ app.get('/testpath', (req, res) => {
     res.send('Hello World TestPath')
 })
 
+app.get('/*', (req, res) => {
+    res.redirect('/')
+})
+
 app.listen(3000, () => {
   console.log('Start server at port 3000.')
 })
