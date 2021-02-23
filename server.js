@@ -9,6 +9,10 @@ app.get('/testpath', (req, res) => {
     res.send('Hello World TestPath')
 })
 
+app.get('/healthz', (req, res) => {
+  res.send('healthz...').status(200)
+})
+
 app.get('/*', (req, res) => {
     res.redirect('/')
 })
