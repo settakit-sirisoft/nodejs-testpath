@@ -13,9 +13,9 @@ app.get('/healthz', (req, res) => {
   res.send('healthz...').status(200)
 })
 
-app.get('/*', (req, res) => {
-    res.redirect('/')
-})
+// app.get('/*', (req, res) => {
+//     res.redirect('/')
+// })
 
 app.listen(3000, () => {
   console.log('Start server at port 3000.')
