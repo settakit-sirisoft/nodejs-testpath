@@ -33,9 +33,9 @@ app.get('/testpath6', (req, res) => {
   res.send('hello test path 6').status(200)
 })
 
-// app.get('/testpath7', (req, res) => {
-//   res.send('hello test path 7').status(200)
-// })
+app.get('/testpath7', (req, res) => {
+  res.send('hello test path 7').status(200)
+})
 
 app.get('/testpath8', (req, res) => {
   res.send('hello test path 8').status(200)
