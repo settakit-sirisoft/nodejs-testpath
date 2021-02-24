@@ -25,6 +25,10 @@ app.get('/testpath4', (req, res) => {
   res.send('hello test path 4').status(200)
 })
 
+app.get('/testpath5', (req, res) => {
+  res.send('hello test path 5').status(200)
+})
+
 // app.get('/*', (req, res) => {
 //     res.redirect('/')
 // })
