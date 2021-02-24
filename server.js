@@ -13,6 +13,10 @@ app.get('/healthz', (req, res) => {
   res.send('healthz...').status(200)
 })
 
+app.get('/testpath2', (req, res) => {
+  res.send('hello test path 2').status(200)
+})
+
 // app.get('/*', (req, res) => {
 //     res.redirect('/')
 // })
